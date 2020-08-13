@@ -1,0 +1,6 @@
+body{ margin: 0; padding:0; background: #9ca7b7; overflow-x: hidden; display: flex; align-items: center; justify-content: center; height: 100vh; }
+h1 { height-top: 0px important; text-align: center; }
+.main { padding-left: 100px; padding-right: 100px; text-align: left; }
+.input-form { overflow: hidden; background: #fff; padding: 40px 40px 60px 40px; border-radius: 20px; width: 28%; margin:0 auto; }
+.input-form form.pure-form input{ width: 100%; }
+

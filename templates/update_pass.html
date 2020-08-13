@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+</head>
+<body>
+    <div>
+        <form action="" method="POST" class="pure-form">
+            Enter your acc name: <br>
+            <input type="text" name="acc_name_update"> <br>
+            Enter your new Password: <br>
+            <input type="text" name="new_pass"> <br>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        {% if data == 'success' %}
+        Password Updated
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acc Delete</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="input-form">
+    <form action="" method="post">
+        Account Name: <br>
+        <input type="text" name="del_acc_name"> <br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+    </div>
+    <div>
+        {% if data %}
+        <p><strong>Error:</strong> {{ data }}
+        {% endif %}
+    </div>
+</body>
+</html>
